@@ -1,0 +1,22 @@
+alertmanager:
+  enabled: false
+ 
+kubeStateMetrics:
+  enabled: false
+
+prometheus-node-exporter:
+  enabled: false
+
+server:
+  enabled: true
+
+  persistentVolume:
+    enabled: true
+    mountPath: /data
+    size: 8Gi
+    
+  replicaCount: 1
+
+prometheus-pushgateway:
+  enabled: false
+
